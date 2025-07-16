@@ -34,9 +34,7 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with ...  
 MacOS Screen Record Tool
-
 Imgur
-
 EZGif
 
 ## Notes

@@ -29,13 +29,13 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='src/assets/week6ProjectDemo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 GIF created with ...  
-MacOS Screen Record Tool -- 
-Imgur --
-EZGif --
+MacOS Screen Record Tool ;
+Imgur ;
+EZGif
 
 ## Notes
 

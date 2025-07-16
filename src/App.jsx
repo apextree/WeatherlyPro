@@ -1,6 +1,5 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-// import { getUserLocation } from "./locationFinder";
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   const baseUrl = "http://api.weatherapi.com/v1";
   const apiKey = API_KEY;
   const endpoint = "/forecast.json";
-  const [location, setLocation] = useState("Newark"); // default fallback
+  const [location, setLocation] = useState("London"); 
 
   async function getUserCity() {
     return new Promise((resolve, reject) => {
@@ -20,7 +19,7 @@ function App() {
       }
       navigator.geolocation.getCurrentPosition(async (position) => {
         const { latitude, longitude } = position.coords;
-        // Use a free reverse geocoding API (here using BigDataCloud as an example)
+       
         const response = await fetch(
           `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
         );
@@ -43,7 +42,7 @@ function App() {
   useEffect(() => {
     getUserCity()
       .then(city => setLocation(city))
-      .catch(() => setLocation("Newark")); // fallback if denied or error
+      .catch(() => setLocation("Newark")); 
   }, []);
 
   useEffect(() => {
@@ -52,7 +51,7 @@ function App() {
     }
   }, [location]);
 
-  // Filter forecast days based on search term and rain chance
+  
   const getFilteredForecast = () => {
     if (!Weatherdata) return [];
     let filtered = Weatherdata.forecast.forecastday;
@@ -120,7 +119,7 @@ function App() {
                 </div>
               </div>
               <div className="forecast-weather-container">
-                {/* Search bar and rain filter for forecast */}
+                {}
                 <div className="forecast-controls">
                   <input
                     type="text"

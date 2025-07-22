@@ -1,0 +1,272 @@
+.search-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.search-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.search-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.search-form {
+  margin-bottom: 40px;
+  background: transparent;
+  backdrop-filter: blur(14px);
+  border: 2px solid #1a1a1a;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.search-input-container {
+  display: flex;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: transparent;
+  backdrop-filter: blur(14px);
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.search-input::placeholder {
+  color: rgba(26, 26, 26, 0.6);
+}
+
+.search-button {
+  padding: 15px 30px;
+  background: transparent;
+  backdrop-filter: blur(14px);
+  color: #4a90e2;
+  border: 2px solid rgba(74, 144, 226, 0.3);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.search-button:hover:not(:disabled) {
+  background: rgba(74, 144, 226, 0.3);
+  border-color: rgba(74, 144, 226, 0.5);
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.search-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.error-message p {
+  color: #e74c3c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: transparent;
+  backdrop-filter: blur(14px);
+  border: 2px solid rgba(231, 76, 60, 0.2);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.search-results {
+  background: transparent;
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+}
+
+.result-header h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.result-time {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: transparent;
+  backdrop-filter: blur(14px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.current-temp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1a1a1a;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.current-details {
+  flex: 1;
+}
+
+.current-details p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.forecast-preview h3 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.forecast-card {
+  background: transparent;
+  backdrop-filter: blur(14px);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.forecast-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.forecast-temps {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.high {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.low {
+  font-size: 1rem;
+  color: #666;
+}
+
+.forecast-condition {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 5px 0 0 0;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .search-container {
+    padding: 20px 15px;
+  }
+
+  .search-header h1 {
+    font-size: 2rem;
+  }
+
+  .search-input-container {
+    flex-direction: column;
+  }
+
+  .current-weather {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .search-results {
+    padding: 20px;
+  }
+}

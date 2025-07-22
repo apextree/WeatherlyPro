@@ -1,46 +1,44 @@
-# Web Development Project 5 - *Weatherly*
+# Web Development Project 6 - *Weatherly Pro*
 
 Submitted by: **Anubhav Dhungana**
 
-This web app: **Weatherly is a modern, responsive weather web application that automatically detects your city using your device’s location. It provides you with current weather conditions, a detailed 14-day forecast, and air quality information for your area. The app features a clean, minimalist interface with a beautiful background, and allows you to easily search and filter the forecast by date, day, or chance of rain. With instant filtering and a user-friendly design, Weatherly helps you plan your days with confidence, whether you’re at home or traveling.**
+This web app: **Weatherly Pro, provides users with detailed weather forecasts and insights for any location. Users can search for a city to view current weather conditions, a multi-day forecast, and interactive charts visualizing temperature trends and rain chances. Each day in the forecast can be clicked for an in-depth view, including additional weather details. The app features a sidebar for easy navigation and a clean, responsive design for an optimal experience on any device.**
 
-Time spent: **7** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard should display at least 10 unique items, one per row
-  - The dashboard includes at least two features in each row
-- [x] **`useEffect` React hook and `async`/`await` are used**
-- [x] **The app dashboard includes at least three summary statistics about the data** 
-  - The app dashboard includes at least three summary statistics about the data, such as:
-    - *Displayed Items: Weather Condition Summary, Air Quality Index, Feels like and Actual Temperature*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar **correctly** filters items in the list, only displaying items matching the search query
-  - The list of results dynamically updates as the user types into the search bar
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter restricts items in the list using a **different attribute** than the search bar 
-  - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
-  - The dashboard list dynamically updates as the user adjusts the filter
+- [x] **Clicking on an item in the list view displays more details about it**
+  - Clicking on an item in the dashboard list navigates to a detail view for that item
+  - Detail view includes extra information about the item not included in the dashboard view
+  - The same sidebar is displayed in detail view as in dashboard view
+  - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  -  *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - At least two charts should be incorporated into the dashboard view of the site
+  - Each chart should describe a different aspect of the dataset
+
+
+  
+The following **additional** features are implemented:
+
+* [x] Users can search for any city in the search tab and get detailed weather information of the entered city. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='src/assets/week6ProjectDemo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='src/assets/Week7ProjectDemoGIF.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 GIF created with ...  
-MacOS Screen Record Tool ;
-Imgur ;
-EZGif
+MacOS Screen Record Tool
 
 ## Notes
-
-Describe any challenges encountered while building the app.
-- Tough to handle APIs and the many complexities of fetching data from them. 
+* CSS gives headaches throughout the project.
 
 ## License
 
